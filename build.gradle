@@ -1,4 +1,5 @@
 apply plugin: 'war'
+apply plugin: 'jetty'
 
 
 repositories {
@@ -8,3 +9,9 @@ repositories {
 dependencies {
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.22.1'
 }
+
+
+jettyRun.contextPath = ""
+httpPort = 8080
+stopPort = 9080
+stopKey = "stopKey"
