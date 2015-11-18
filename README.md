@@ -8,9 +8,14 @@ Run Jersey using gradle _jettyRun_ task:
 $ gradle jettyRun
 ```
 
-Check the service:
+### GET
 ```
 $ curl -i http://127.0.0.1:8080/hello
+```
+
+### POST
+```
+$ curl -d "My Friend" -H "Content-Type: text/plain"  http://127.0.0.1:8080/hello
 ```
 
 ## License
